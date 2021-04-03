@@ -1,4 +1,5 @@
 import 'package:cryptocoinapp/screens/home_screen.dart';
+import 'package:cryptocoinapp/screens/info_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/' : (context) => HomeScreen(),
+        '/info' : (context) =>    InfoScreen(),
       },
     );
   }
