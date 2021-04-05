@@ -1,5 +1,6 @@
-import 'package:cryptocoinapp/models/cryptocoin_model.dart';
+import 'package:cryptocoinapp/screens/info_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:cryptocoinapp/models/cryptocoin_model.dart';
 import 'package:cryptocoinapp/services/crypto_service.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,7 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         GestureDetector(
                           onTap: () {
-                              Navigator.pushNamed(context, '/info');
+                            Navigator.pushNamed(
+                              context, '/info'
+                            );
                           },
                           child: Container(
                             width: 360,
@@ -81,7 +84,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                         width: 60,
